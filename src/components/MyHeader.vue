@@ -9,7 +9,7 @@
                 <b-nav-item to="/Lambda">Go to Lambda</b-nav-item>
             </b-navbar-nav>
         </b-collapse>
-    </b-navbar>    
+    </b-navbar>
   </div>
 </template>
 

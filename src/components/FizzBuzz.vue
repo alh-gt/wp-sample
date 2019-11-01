@@ -20,6 +20,20 @@
 </template>
 
 <script>
+  const fizzbuzz = (num) => {
+      var result
+      if(num % 3 == 0 && num % 5 == 0){
+          result = 'fizzbuzz'
+      }else if(num % 3 == 0){
+          result = 'fizz'
+      }else if(num % 5 == 0){
+          result = 'buzz'
+      }else{
+          result = num
+      }
+      return result
+  }
+  
   export default {
     data: function() {
       return {
@@ -40,17 +54,4 @@
     }
   }
 
-  export function fizzbuzz(num){
-    var result
-    if(num % 3 == 0 && num % 5 == 0){
-        result = 'fizzbuzz'
-    }else if(num % 3 == 0){
-        result = 'fizz'
-    }else if(num % 5 == 0){
-        result = 'buzz'
-    }else{
-        result = num
-    }
-    return result
-  }
 </script>
